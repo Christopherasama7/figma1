@@ -581,11 +581,14 @@ ul {
 @media screen and (max-width: 320px) and (min-width: 80px) {
 
     html {
-        font-size: 60%;
+        font-size: 70%;
+        margin-left: 50px;
     }
 
     nav {
         max-width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .logo {
@@ -599,10 +602,6 @@ ul {
         max-width: 100%;
         padding: 0;
         margin: 0;
-    }
-
-    h1, h2, p {
-        padding-left: 50px;
     }
 
     section {
