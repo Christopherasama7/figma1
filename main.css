@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -14,12 +15,13 @@ body {
 }
 
 .logo {
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 nav {
     padding: 50px 0 60px 0;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     background-color: #E0E0E0;
 }
@@ -219,13 +221,17 @@ span {
 .calendar {
     display: flex;
     /* flex-wrap: wrap; */
+    /* flex-direction: row; */
     justify-content: space-around;
     gap: 30px;
-    align-items: center;
+    /* align-items: center; */
     background-color: #E0E0E0;
-    padding: 15px 0;
+    padding: 15px 50px;
 }
 
+.calendar-img {
+    width: 100%;
+}
 .calendarimg, .cal {
     display: flex;
     flex-wrap: wrap;
@@ -236,7 +242,7 @@ span {
 }
 
 .calendarimg img {
-    margin-right: 50px;
+    margin-right: 40px;
     align-items: start;
 }
 
@@ -375,16 +381,93 @@ span {
 
 @media (max-width:991px){
     html{
-        font-size: 75%;
+        /* font-size: 75%; */
     }
 
+/* .logo {
+    margin-left: 100px;
+} */
+
+.hero-text {
+    justify-content: space-around;
+}
+
+.hero-img {
+    width: 250px;
+}
+nav {
+    padding: 50px 0 60px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #E0E0E0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 31px;
+    width: 100%;
+}
+
+.navlist {
+    justify-content: space-around;
+}
+
+.navlist ul li a{
+    text-decoration: none;
+    color: #18191F;
+}
+
+.navlist ul li a:hover{
+    color: #4caf4f;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+}
+
+.btn1 {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.btn1 a:hover {
+    color: #000;
+}
+
+.btn1 a {
+    text-decoration: none;
+    color: #4caf4f;
+    font-size: 15px;   
+}
+
+.btn2 {
+    background-color: #4caf4f;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #4caf4f;
+}
+
+.btn2 a {
+    background: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.pixelgrade-img {
+    width: 250px;
+}
+
+.pixelgrade-text {
+    font-size: 20%;
+}
     .navlist{
-        margin-top: 40px;
+        /* margin-top: 40px; */
         padding: 1.5rem 1rem;
     }
-
-    /* section{
-        padding: 1.5rem;
+/* 
+    section{
+        padding: 0 1.5rem;
     } */
 }
 
@@ -394,13 +477,72 @@ span {
         display: block; /* Show hamburger on small screens */
     }
 
+    .hero-text h1 {
+        line-height: 50px;
+        font-weight: 650;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 250px;
+    }
+
+    .pixelgrade-text {
+        font-size: 80%;
+    }
+
+    .pixelgrade-text h2 {
+        letter-spacing: 0.2px;
+        font-weight: 650;
+        font-size: 31px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .pixelgrade-img {
+        width: 250px;
+    }
+
+    .calendar {
+        display: flex;
+    }
+
+    .calendar-img {
+        width: 34%;
+        float: left;
+    }
+
+    .calendar-text {
+        width: 60%;
+
+    }
+
+    .drive-img {
+        width: 250px;
+    }
+
+    .drive-text {
+        width: 65%;
+    }
+
+    .drive-text h2 {
+        letter-spacing: 0.2px;
+        font-weight: 450;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
     .navlist {
         display: none; /* Hide the menu initially */
         flex-direction: column;
         width: 100%;
         background-color: #E0E0E0;
         position: absolute;
-        top: 70px; /* Adjust according to your header height */
+        top: 90px; /* Adjust according to your header height */
         left: 0;
         z-index: 1000;
     }
@@ -436,7 +578,7 @@ span {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (min-width: 80px) {
 
     html {
         font-size: 60%;
@@ -446,8 +588,12 @@ span {
         max-width: 100%;
     }
 
+    .logo {
+        margin-left: 0;
+    }
+
     .hero {
-        max-width: 100%;
+        max-width: 100% ;
     }
     body {
         max-width: 100%;
@@ -459,7 +605,3 @@ span {
         justify-content: center;
     }
 }
-
-
-
-  
