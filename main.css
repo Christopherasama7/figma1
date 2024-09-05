@@ -601,6 +601,10 @@ ul {
         margin: 0;
     }
 
+    h1, h2, p {
+        padding-left: 50px;
+    }
+
     section {
         justify-content: center;
     }
