@@ -220,18 +220,18 @@ span {
 
 .calendar {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
+    float: left;
     justify-content: space-around;
     gap: 30px;
-    /* align-items: center; */
     background-color: #E0E0E0;
     padding: 15px 50px;
 }
 
 .calendar-img {
     width: 100%;
+    /* float: left; */
 }
+
 .calendarimg, .cal {
     display: flex;
     flex-wrap: wrap;
@@ -493,7 +493,8 @@ ul {
     }
 
     .pixelgrade-text {
-        font-size: 80%;
+        font-size: 90%;
+        text-align: center;
     }
 
     .pixelgrade-text h2 {
@@ -509,16 +510,17 @@ ul {
     }
 
     .calendar {
-        display: flex;
+        display: block;
+        float: left;
     }
 
     .calendar-img {
-        width: 34%;
+        width: 50%;
         float: left;
     }
 
     .calendar-text {
-        width: 60%;
+        /* width: 60%; */
 
     }
 
@@ -573,22 +575,18 @@ ul {
     }
 
     .calendar {
-        display: flex;
-        flex-wrap: wrap;
+        float: left;
     }
 }
 
 @media screen and (max-width: 320px) and (min-width: 80px) {
 
     html {
-        font-size: 70%;
-        margin-left: 50px;
+        font-size: 60%;
     }
 
     nav {
         max-width: 100%;
-        justify-content: center;
-        align-items: center;
     }
 
     .logo {
